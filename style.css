@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+
+  background: hsl(257, 40%, 49%) url(images/bg-desktop.svg);
+}
+.header img {
+  margin: 20px;
+  max-width: 100%;
+  height: 35px;
+  width: 150px;
+}
+.content {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  margin: 20px;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.left img {
+  max-width: 100%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 50%;
+}
+.right h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  letter-spacing: 1.25px;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.right p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
+  border: 0;
+  border-radius: 1000px;
+  min-width: 180px;
+  text-align: center;
+  padding: 0.75rem;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+button:hover {
+  background-color: rgb(221, 116, 221);
+  color: white;
+}
+.icons {
+}
+.icon {
+  color: #fff;
+  margin: 10px;
+  /* float: right; */
+}
+.icon-border {
+  float: right;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+.icon:hover {
+  color: rgb(221, 116, 221);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background: hsl(257, 40%, 49%);
+  }
+  .container {
+    background: hsl(257, 40%, 49%) url(images/bg-mobile.svg);
+  }
+  .content {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: hsl(257, 40%, 49%);
+  }
+  .box {
+    margin: 10px;
+  }
+  .left {
+    float: none;
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    width: 100%;
+  }
+  .right h1 {
+    text-align: center;
+  }
+  .right p {
+    text-align: center;
+  }
+  button {
+    margin-left: 33%;
+  }
+  footer {
+    background-color: white;
+  }
+}
